@@ -1832,12 +1832,6 @@ void World::SetInitialWorldSettings()
         exit(1);
     }
 
-#ifdef _WIN32
-	/// - Check Activation Key
-    std::string keyfile = "key.txt";
-    findKeyfile(keyfile);
-#endif
-
     ///- Initialize pool manager
     sPoolMgr->Initialize();
 

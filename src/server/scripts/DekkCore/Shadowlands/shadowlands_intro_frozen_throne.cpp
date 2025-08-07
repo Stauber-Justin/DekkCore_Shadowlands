@@ -963,7 +963,7 @@ struct npc_shard_of_domination : public ScriptedAI
 
 void AddSC_ShadowlandsIntro()
 {
-    new player_area_forzen_Throne();
+    new player_area_frozen_Throne();
     new npc_highlord_darion_mograine_176554();
     new npc_chilling_summons_commander();
     new player_credit_to_dark_abduction();
