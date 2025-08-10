@@ -76,7 +76,7 @@ RealmID = 1
 #        Example:     "@prefix@/share/trinitycore"
 #        Default:     "."
 
-DataDir = "."
+DataDir = "Data"
 
 #
 #    LogsDir
@@ -85,7 +85,7 @@ DataDir = "."
 #                     Logs directory must exists, or log file creation will be disabled.
 #        Default:     "" - (Log files will be stored in the current path)
 
-LogsDir = ""
+LogsDir = "Logs/World"
 
 #
 #    LoginDatabaseInfo
@@ -131,9 +131,9 @@ HotfixDatabaseInfo    = "127.0.0.1;3306;trinity;trinity;hotfixes"
 #                     1 - (HotfixDatabase.WorkerThreads)
 
 LoginDatabase.WorkerThreads     = 1
-WorldDatabase.WorkerThreads     = 1
-CharacterDatabase.WorkerThreads = 1
-HotfixDatabase.WorkerThreads    = 1
+WorldDatabase.WorkerThreads     = 4
+CharacterDatabase.WorkerThreads = 2
+HotfixDatabase.WorkerThreads    = 2
 
 #
 #    LoginDatabase.SynchThreads
@@ -147,9 +147,9 @@ HotfixDatabase.WorkerThreads    = 1
 #                     1 - (HotfixDatabase.SynchThreads)
 
 LoginDatabase.SynchThreads     = 1
-WorldDatabase.SynchThreads     = 1
+WorldDatabase.SynchThreads     = 4
 CharacterDatabase.SynchThreads = 2
-HotfixDatabase.SynchThreads    = 1
+HotfixDatabase.SynchThreads    = 2
 
 #
 #    MaxPingTime
@@ -504,7 +504,7 @@ AddonChannel = 1
 #        Description: Number of threads to update maps.
 #        Default:     1
 
-MapUpdate.Threads = 1
+MapUpdate.Threads = 6
 
 #
 #    CleanCharacterDB
@@ -1128,10 +1128,6 @@ Guild.EventLogRecordsCount = 100
 Guild.ResetHour = 6
 
 #
-
-Guild.SaveInterval = 15
-
-#
 #    Guild.BankEventLogRecordsCount
 #        Description: Number of log entries for guild bank events that are stored per guild. Old
 #                     entries will be overwritten if the number of log entries exceed the
@@ -1288,7 +1284,7 @@ BeepAtStart = 1
 #        Default:     1 - (Enabled)
 #                     0 - (Disabled)
 
-FlashAtStart = 1
+FlashAtStart = 0
 
 #
 #    Motd
@@ -1489,7 +1485,7 @@ Updates.CleanDeadRefMaxCount = 3
 #        Default:     1 - (Enabled)
 #                     0 - (Disabled)
 
-HotSwap.Enabled = 1
+HotSwap.Enabled = 0
 
 #
 #    HotSwap.ScriptDir
@@ -4189,7 +4185,7 @@ Allow.IP.Based.Action.Logging = 0
 #        Default:     1 - (Enabled)
 #                     0 - (Disabled)
 
-ConsoleErrorLogging = 0
+ConsoleErrorLogging = 1
 
 #
 ###################################################################################################
@@ -4509,7 +4505,7 @@ DungeonFinder.ForceMinplayers = 0
 #   Enable = 1, Disable = 0, Duration is in minute.
 #
 
-ZoloCraft.Enable = 1
+ZoloCraft.Enable = 0
 ZoloCraft.StatMultiplier = 10
 ZoloCraft.RatingMultiplier = 5
 ZoloCraft.InstantRess = 1
@@ -4683,23 +4679,13 @@ WorldQuests.BlackList = ""
 ###################################################################################################
 # Missing options (Causing errors and crash sometimes) > 11/12/22
 ###################################################################################################
-ResetSchedule.WeekDay = 2
-
-ResetSchedule.Hour = 8
 
 ChatFlood.AddonMessageCount = 100
 
 ChatFlood.AddonMessageDelay = 1
 
-AutoRestartWorldserver.Timer = 0
-
 WorldQuest.ResetTimeHour = 4
 
 WorldQuest.DailyReset = 1
 
-MinWorldUpdateTime = 1
-
-Boss.Announcer.Enable = 1
-
-DisplayPromotion.PromotionID = 0
 ###################################################################################################
