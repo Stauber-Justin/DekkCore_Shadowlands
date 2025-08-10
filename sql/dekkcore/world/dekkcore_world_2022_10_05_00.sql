@@ -32,9 +32,9 @@ INSERT INTO `gossip_menu` (`MenuID`, `TextID`, `VerifiedBuild`) VALUES
 (28075, @NPCTEXTID+1, 45114); -- 188377 (So'turu)
 
 DELETE FROM `gossip_menu_option` WHERE (`MenuID`=28074);
-INSERT INTO `gossip_menu_option` (`MenuID`, `OptionID`, `OptionText`, `OptionBroadcastTextId`, `OptionNpcFlag`, `Language`, `ActionMenuID`, `ActionPoiID`, `BoxCoded`, `BoxMoney`, `BoxText`, `BoxBroadcastTextID`, `VerifiedBuild`) VALUES
-(28074, 1, 'Show me your wares.', 58437, 128, 0, 0, 0, 0, 0, NULL, 0, 45114), -- OptionBroadcastTextID: 58437 - 90189 - 180077
-(28074, 0, 'You seem to recognize this coin. What is it?', 0, 1, 0, 28075, 0, 0, 0, NULL, 0, 45114);
+INSERT INTO `gossip_menu_option` (`MenuID`, `OptionID`, `OptionText`, `OptionBroadcastTextId`, `Language`, `ActionMenuID`, `ActionPoiID`, `BoxCoded`, `BoxMoney`, `BoxText`, `BoxBroadcastTextID`, `VerifiedBuild`) VALUES
+(28074, 1, 'Show me your wares.', 58437, 0, 0, 0, 0, 0, NULL, 0, 45114), -- OptionBroadcastTextID: 58437 - 90189 - 180077
+(28074, 0, 'You seem to recognize this coin. What is it?', 0, 0, 28075, 0, 0, 0, NULL, 0, 45114);
 
 -- Phasing
 DELETE FROM `phase_area` WHERE (`AreaId` = 13499 AND `PhaseId` = 18890);
@@ -543,9 +543,9 @@ INSERT INTO `gossip_menu` (`MenuID`, `TextID`, `VerifiedBuild`) VALUES
 UPDATE `gossip_menu` SET `VerifiedBuild`=45745 WHERE `MenuID`=8988 AND `TextID`=12134;
 
 DELETE FROM `gossip_menu_option` WHERE `MenuID`=24211;
-INSERT INTO `gossip_menu_option` (`MenuID`, `OptionID`, `OptionNpc`, `OptionText`, `OptionBroadcastTextId`, `OptionNpcFlag`, `Language`, `ActionMenuID`, `ActionPoiID`, `BoxCoded`, `BoxMoney`, `BoxText`, `BoxBroadcastTextID`, `VerifiedBuild`) VALUES
-(24211, 0, 0, 'How do I play?', 176229, 1, 0, 24308, 0, 0, 0, NULL, 0, 45745),
-(24211, 1, 1, 'I would like to retrieve my trophy.', 177504, 128, 0, 0, 0, 0, 0, NULL, 0, 45745);
+INSERT INTO `gossip_menu_option` (`MenuID`, `OptionID`, `OptionNpc`, `OptionText`, `OptionBroadcastTextId`, `Language`, `ActionMenuID`, `ActionPoiID`, `BoxCoded`, `BoxMoney`, `BoxText`, `BoxBroadcastTextID`, `VerifiedBuild`) VALUES
+(24211, 0, 0, 'How do I play?', 176229, 0, 24308, 0, 0, 0, NULL, 0, 45745),
+(24211, 1, 1, 'I would like to retrieve my trophy.', 177504, 0, 0, 0, 0, 0, NULL, 0, 45745);
 
 DELETE FROM `gossip_menu_option` WHERE `MenuID`=8958 AND `OptionID`=6;
 UPDATE `gossip_menu_option` SET `ActionPoiID`=0 WHERE `MenuID`=8783 AND `OptionID`=1;
@@ -911,10 +911,10 @@ INSERT INTO `gossip_menu` (`MenuID`, `TextID`, `VerifiedBuild`) VALUES
 (24390, 14672, 45745); -- 155269 (Snipehunter Goro)
 
 DELETE FROM `gossip_menu_option` WHERE `MenuID` IN (24389, 24390);
-INSERT INTO `gossip_menu_option` (`MenuID`, `OptionID`, `OptionNpc`, `OptionText`, `OptionBroadcastTextId`, `OptionNpcFlag`, `Language`, `ActionMenuID`, `ActionPoiID`, `BoxCoded`, `BoxMoney`, `BoxText`, `BoxBroadcastTextID`, `VerifiedBuild`) VALUES
-(24389, 0, 0, 'What are Synthebrew Goggles?', 35222, 1, 0, 24390, 0, 0, 0, NULL, 0, 45745),
-(24390, 0, 0, 'I''d like a pair of Synthebrew Goggles.', 35220, 1, 0, 0, 0, 0, 0, NULL, 0, 45745),
-(24390, 1, 0, 'What did you say earlier?', 35223, 1, 0, 24389, 0, 0, 0, NULL, 0, 45745);
+INSERT INTO `gossip_menu_option` (`MenuID`, `OptionID`, `OptionNpc`, `OptionText`, `OptionBroadcastTextId`, `Language`, `ActionMenuID`, `ActionPoiID`, `BoxCoded`, `BoxMoney`, `BoxText`, `BoxBroadcastTextID`, `VerifiedBuild`) VALUES
+(24389, 0, 0, 'What are Synthebrew Goggles?', 35222, 0, 24390, 0, 0, 0, NULL, 0, 45745),
+(24390, 0, 0, 'I''d like a pair of Synthebrew Goggles.', 35220, 0, 0, 0, 0, 0, NULL, 0, 45745),
+(24390, 1, 0, 'What did you say earlier?', 35223, 0, 24389, 0, 0, 0, NULL, 0, 45745);
 
 UPDATE `gossip_menu_option` SET `ActionPoiID`=0 WHERE `MenuID`=8968 AND `OptionID`=1;
 UPDATE `gossip_menu_option` SET `VerifiedBuild`=45745 WHERE `MenuID` IN (8968, 8967, 9560);

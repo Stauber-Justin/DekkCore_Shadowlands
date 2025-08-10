@@ -1204,10 +1204,10 @@ UPDATE `gossip_menu_option` SET `OptionText`='我需要空运服务。', `Verifi
 UPDATE `gossip_menu_option` SET `OptionText`='我想要看看你卖的货物。', `VerifiedBuild`=41793 WHERE (`MenuID`=10181 AND `OptionID`=0);
 UPDATE `gossip_menu_option` SET `OptionText`='让我查看一下拍卖的物品。', `VerifiedBuild`=41793 WHERE (`MenuID`=12949 AND `OptionID`=1);
 UPDATE `gossip_menu_option` SET `OptionText`='我想乘风筝出游。', `VerifiedBuild`=42010 WHERE (`MenuID`=13830 AND `OptionID`=0);
-UPDATE `gossip_menu_option` SET `OptionText`='我要挑战你，托尔。', `OptionType`=1, `OptionNpcFlag`=1, `VerifiedBuild`=41793 WHERE (`MenuID`=18848 AND `OptionID`=0);
-UPDATE `gossip_menu_option` SET `OptionText`='我要挑战你，赫尔多。', `OptionType`=1, `OptionNpcFlag`=1, `VerifiedBuild`=41793 WHERE (`MenuID`=18850 AND `OptionID`=0);
-UPDATE `gossip_menu_option` SET `OptionText`='我要挑战你，布约恩。', `OptionType`=1, `OptionNpcFlag`=1, `VerifiedBuild`=41793 WHERE (`MenuID`=18851 AND `OptionID`=0);
-UPDATE `gossip_menu_option` SET `OptionText`='我们已经准备好来挑战你了，奥丁！', `OptionType`=1, `OptionNpcFlag`=1, `BoxText`='你想要开始这场首领战吗？', `BoxBroadcastTextID`=57303, `VerifiedBuild`=41793 WHERE (`MenuID`=19198 AND `OptionID`=0);
+UPDATE `gossip_menu_option` SET `OptionText`='我要挑战你，托尔。', `OptionType`=1,`VerifiedBuild`=41793 WHERE (`MenuID`=18848 AND `OptionID`=0);
+UPDATE `gossip_menu_option` SET `OptionText`='我要挑战你，赫尔多。', `OptionType`=1, `VerifiedBuild`=41793 WHERE (`MenuID`=18850 AND `OptionID`=0);
+UPDATE `gossip_menu_option` SET `OptionText`='我要挑战你，布约恩。', `OptionType`=1, `VerifiedBuild`=41793 WHERE (`MenuID`=18851 AND `OptionID`=0);
+UPDATE `gossip_menu_option` SET `OptionText`='我们已经准备好来挑战你了，奥丁！', `OptionType`=1, `BoxText`='你想要开始这场首领战吗？', `BoxBroadcastTextID`=57303, `VerifiedBuild`=41793 WHERE (`MenuID`=19198 AND `OptionID`=0);
 UPDATE `gossip_menu_option` SET `OptionText`='让我看看你有什么。', `VerifiedBuild`=41793 WHERE (`MenuID`=19540 AND `OptionID`=2);
 UPDATE `gossip_menu_option` SET `OptionText`='我想要看看你卖的货物。', `VerifiedBuild`=42010 WHERE (`MenuID`=20440 AND `OptionID`=0);
 

@@ -6280,16 +6280,16 @@ UPDATE `creature_template_scaling` SET `LevelScalingDeltaMax`=-2 WHERE (`Entry`=
 
 
 UPDATE `points_of_interest` SET `VerifiedBuild`=45745 WHERE `ID` IN (6870, 6637, 6790, 6636, 6635, 6634, 6633, 6632, 6631, 6630);
-UPDATE `points_of_interest` SET `PositionZ`=5267.18017578125, `Unknown905`=62182, `VerifiedBuild`=45745 WHERE `ID`=6799;
-UPDATE `points_of_interest` SET `PositionZ`=5266.89990234375, `Unknown905`=62182, `VerifiedBuild`=45745 WHERE `ID` IN (6797, 6793, 6791, 6800);
-UPDATE `points_of_interest` SET `PositionZ`=5267.2001953125, `Unknown905`=62182, `VerifiedBuild`=45745 WHERE `ID`=6795;
-UPDATE `points_of_interest` SET `PositionZ`=5267.580078125, `Unknown905`=62182, `VerifiedBuild`=45745 WHERE `ID`=6798;
-UPDATE `points_of_interest` SET `PositionZ`=5267.31005859375, `Unknown905`=62182, `VerifiedBuild`=45745 WHERE `ID`=6794;
-UPDATE `points_of_interest` SET `PositionZ`=5267.58984375, `Flags`=99, `Name`='Fishing Trainer', `Unknown905`=62182, `VerifiedBuild`=45745 WHERE `ID`=6801;
-UPDATE `points_of_interest` SET `PositionZ`=5267.18994140625, `Unknown905`=62182, `VerifiedBuild`=45745 WHERE `ID`=6792;
-UPDATE `points_of_interest` SET `PositionZ`=5267.4599609375, `Unknown905`=62182, `VerifiedBuild`=45745 WHERE `ID`=6802;
-UPDATE `points_of_interest` SET `PositionZ`=5267.25, `Unknown905`=62182, `VerifiedBuild`=45745 WHERE `ID`=6796;
-UPDATE `points_of_interest` SET `PositionZ`=5274.75, `Flags`=99, `Name`='Portal to Stormwind', `Unknown905`=63904, `VerifiedBuild`=45745 WHERE `ID`=6804;
+UPDATE `points_of_interest` SET `PositionZ`=5267.18017578125, `WMOGroupID`=62182, `VerifiedBuild`=45745 WHERE `ID`=6799;
+UPDATE `points_of_interest` SET `PositionZ`=5266.89990234375, `WMOGroupID`=62182, `VerifiedBuild`=45745 WHERE `ID` IN (6797, 6793, 6791, 6800);
+UPDATE `points_of_interest` SET `PositionZ`=5267.2001953125, `WMOGroupID`=62182, `VerifiedBuild`=45745 WHERE `ID`=6795;
+UPDATE `points_of_interest` SET `PositionZ`=5267.580078125, `WMOGroupID`=62182, `VerifiedBuild`=45745 WHERE `ID`=6798;
+UPDATE `points_of_interest` SET `PositionZ`=5267.31005859375, `WMOGroupID`=62182, `VerifiedBuild`=45745 WHERE `ID`=6794;
+UPDATE `points_of_interest` SET `PositionZ`=5267.58984375, `Flags`=99, `Name`='Fishing Trainer', `WMOGroupID`=62182, `VerifiedBuild`=45745 WHERE `ID`=6801;
+UPDATE `points_of_interest` SET `PositionZ`=5267.18994140625, `WMOGroupID`=62182, `VerifiedBuild`=45745 WHERE `ID`=6792;
+UPDATE `points_of_interest` SET `PositionZ`=5267.4599609375, `WMOGroupID`=62182, `VerifiedBuild`=45745 WHERE `ID`=6802;
+UPDATE `points_of_interest` SET `PositionZ`=5267.25, `WMOGroupID`=62182, `VerifiedBuild`=45745 WHERE `ID`=6796;
+UPDATE `points_of_interest` SET `PositionZ`=5274.75, `Flags`=99, `Name`='Portal to Stormwind', `WMOGroupID`=63904, `VerifiedBuild`=45745 WHERE `ID`=6804;
 
 
 

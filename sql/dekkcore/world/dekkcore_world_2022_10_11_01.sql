@@ -1,10 +1,10 @@
 UPDATE `creature_template` SET `ScriptName`='npc_sylvanas_windrunner_177114' WHERE  `entry`=177114;
-UPDATE `world`.`creature_template` SET `ScriptName`='npc_plague_177261' WHERE  `entry`=177261;
-UPDATE `world`.`creature_template` SET `ScriptName`='npc_trained_flayedwing_177583' WHERE  `entry`=177583;
-UPDATE `world`.`creature_template` SET `ScriptName`='npc_rokhan_126549' WHERE  `entry`=126549;
+UPDATE `creature_template` SET `ScriptName`='npc_plague_177261' WHERE  `entry`=177261;
+UPDATE `creature_template` SET `ScriptName`='npc_trained_flayedwing_177583' WHERE  `entry`=177583;
+UPDATE `creature_template` SET `ScriptName`='npc_rokhan_126549' WHERE  `entry`=126549;
 
-DELETE FROM `world`.`quest_template` WHERE  `ID`=14281;
-REPLACE INTO `world`.`disables` (`sourceType`, `entry`, `flags`, `comment`) VALUES ('1', '14281', '0', 'deprecated quest');
+DELETE FROM `quest_template` WHERE  `ID`=14281;
+REPLACE INTO `disables` (`sourceType`, `entry`, `flags`, `comment`) VALUES ('1', '14281', '0', 'deprecated quest');
 UPDATE `creature_template` SET `ScriptName` = 'npc_sean_dempsey' WHERE `entry` IN (35081);
 UPDATE `creature_template` SET `ScriptName` = 'npc_lord_darius_crowley_c1' WHERE `entry` IN (35077);
 UPDATE `creature_template` SET `ScriptName` = 'npc_worgen_runt_c1' WHERE `entry` IN (35188);

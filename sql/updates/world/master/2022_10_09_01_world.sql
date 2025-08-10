@@ -11,7 +11,7 @@ INSERT INTO `gossip_menu` (`MenuID`, `TextID`, `VerifiedBuild`) VALUES
 (23691, 820, 45745); -- 6727 (Innkeeper Brianna)
 
 DELETE FROM `gossip_menu_option` WHERE (`OptionID`=0 AND `MenuID` IN (20356,20405,6568)) OR (`OptionID`=1 AND `MenuID` IN (20004,20177));
-INSERT INTO `gossip_menu_option` (`MenuID`, `OptionID`, `OptionNpc`, `OptionText`, `OptionBroadcastTextId`, `OptionNpcFlag`, `Language`, `ActionMenuID`, `ActionPoiID`, `BoxCoded`, `BoxMoney`, `BoxText`, `BoxBroadcastTextID`, `VerifiedBuild`) VALUES
+INSERT INTO `gossip_menu_option` (`MenuID`, `OptionID`, `OptionIcon`, `OptionText`, `OptionBroadcastTextId`, `OptionNpcFlag`, `Language`, `ActionMenuID`, `ActionPoiID`, `BoxCoded`, `BoxMoney`, `BoxText`, `BoxBroadcastTextID`, `VerifiedBuild`) VALUES
 (20356, 0, 1, 'Let\'s see what you have.', 11820, 128, 0, 0, 0, 0, 0, NULL, 0, 45745),
 (20405, 0, 28, 'I can help you procure some valuable items.', 119001, 68719476736, 0, 0, 0, 0, 0, NULL, 0, 45745),
 (6568, 0, 1, 'Show me what I can learn.', 10761, 128, 0, 0, 0, 0, 0, NULL, 0, 45745),
@@ -19,7 +19,7 @@ INSERT INTO `gossip_menu_option` (`MenuID`, `OptionID`, `OptionNpc`, `OptionText
 (20177, 1, 0, 'Why can\'t I research Artifact Knowledge?', 130505, 1, 0, 21664, 0, 0, 0, NULL, 0, 45745);
 
 DELETE FROM `gossip_menu_option` WHERE (`OptionID`=1 AND `MenuID` IN (23691,14674,23608)) OR (`OptionID`=0 AND `MenuID` IN (11100,14674,11095,2464,23691)) OR (`OptionID`=12 AND `MenuID`=15125) OR (`OptionID`=13 AND `MenuID`=15125) OR (`OptionID`=11 AND `MenuID`=15125);
-INSERT INTO `gossip_menu_option` (`MenuID`, `OptionID`, `OptionNpc`, `OptionText`, `OptionBroadcastTextId`, `OptionNpcFlag`, `Language`, `ActionMenuID`, `ActionPoiID`, `BoxCoded`, `BoxMoney`, `BoxText`, `BoxBroadcastTextID`, `VerifiedBuild`) VALUES
+INSERT INTO `gossip_menu_option` (`MenuID`, `OptionID`, `OptionIcon`, `OptionText`, `OptionBroadcastTextId`, `OptionNpcFlag`, `Language`, `ActionMenuID`, `ActionPoiID`, `BoxCoded`, `BoxMoney`, `BoxText`, `BoxBroadcastTextID`, `VerifiedBuild`) VALUES
 (23691, 1, 1, 'Let me browse your goods.', 2823, 128, 0, 0, 0, 0, 0, NULL, 0, 45745),
 (14674, 1, 1, 'What do you have for sale?', 10182, 128, 0, 0, 0, 0, 0, NULL, 0, 45745),
 (11100, 0, 1, 'I wish to browse your wares.', 4424, 128, 0, 0, 0, 0, 0, NULL, 0, 45745),

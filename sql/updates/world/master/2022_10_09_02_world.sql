@@ -16,7 +16,7 @@ INSERT INTO `gossip_menu` (`MenuID`, `TextID`, `VerifiedBuild`) VALUES
 (26775, 42569, 45745); -- 176100 (Iona Skyblade)
 
 DELETE FROM `gossip_menu_option` WHERE (`OptionID`=5 AND `MenuID` IN (26091,26145)) OR (`OptionID`=0 AND `MenuID` IN (10434,25654,26091,27404,25591,26122,26145,26775,24215,25652)) OR (`OptionID`=3 AND `MenuID` IN (26091,26145)) OR (`OptionID`=9 AND `MenuID`=26145) OR (`OptionID`=8 AND `MenuID` IN (26132,26145)) OR (`OptionID`=1 AND `MenuID` IN (25955,10637,26145,26091,16820)) OR (`OptionID`=2 AND `MenuID` IN (27404,26091,26145)) OR (`OptionID`=4 AND `MenuID` IN (26091,26145)) OR (`OptionID`=6 AND `MenuID`=26145);
-INSERT INTO `gossip_menu_option` (`MenuID`, `OptionID`, `OptionNpc`, `OptionText`, `OptionBroadcastTextId`, `OptionNpcFlag`, `Language`, `ActionMenuID`, `ActionPoiID`, `BoxCoded`, `BoxMoney`, `BoxText`, `BoxBroadcastTextID`, `VerifiedBuild`) VALUES
+INSERT INTO `gossip_menu_option` (`MenuID`, `OptionID`, `OptionIcon`, `OptionText`, `OptionBroadcastTextId`, `OptionNpcFlag`, `Language`, `ActionMenuID`, `ActionPoiID`, `BoxCoded`, `BoxMoney`, `BoxText`, `BoxBroadcastTextID`, `VerifiedBuild`) VALUES
 (26091, 5, 0, 'Ring of Warding', 0, 1, 0, 0, 0, 0, 0, NULL, 0, 45745),
 (10434, 0, 2, 'Show me where I can fly.', 12271, 8192, 0, 0, 0, 0, 0, NULL, 0, 45745), -- OptionBroadcastTextID: 12271 - 140511 - 158191
 (25654, 0, 32, 'Show me the Sanctum.', 0, 2199023255552, 0, 0, 0, 0, 0, NULL, 0, 45745),

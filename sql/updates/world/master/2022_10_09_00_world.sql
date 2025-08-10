@@ -31,7 +31,7 @@ INSERT INTO `gossip_menu` (`MenuID`, `TextID`, `VerifiedBuild`) VALUES
 (26642, 42366, 45745); -- 158556 (Aithlyn)
 
 DELETE FROM `gossip_menu_option` WHERE `MenuID` IN (5721,7047,8047,11573,15131,15133,21447,22817,24257,24288,24386,24406,25235,25278,25592,25644,25680,25688,26065,26067,26177,26421,26571,26600,26642);
-INSERT INTO `gossip_menu_option` (`MenuID`, `OptionID`, `OptionNpc`, `OptionText`, `OptionBroadcastTextId`, `OptionNpcFlag`, `Language`, `ActionMenuID`, `ActionPoiID`, `BoxCoded`, `BoxMoney`, `BoxText`, `BoxBroadcastTextID`, `VerifiedBuild`) VALUES
+INSERT INTO `gossip_menu_option` (`MenuID`, `OptionID`, `OptionIcon`, `OptionText`, `OptionBroadcastTextId`, `OptionNpcFlag`, `Language`, `ActionMenuID`, `ActionPoiID`, `BoxCoded`, `BoxMoney`, `BoxText`, `BoxBroadcastTextID`, `VerifiedBuild`) VALUES
 (5721, 0, 1, 'Show me what hooch you\'ve got to sell, Kreeg.', 9372, 128, 0, 0, 0, 0, 0, NULL, 0, 45745),
 (5721, 1, 0, 'What do you mean, buy?!  I\'m the king now... and it\'s good to be the king!', 9373, 1, 0, 0, 0, 0, 0, NULL, 0, 45745),
 (7047, 0, 1, 'Let\'s see what you have.', 11820, 128, 0, 0, 0, 0, 0, NULL, 0, 45745),

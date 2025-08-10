@@ -15,7 +15,7 @@ INSERT INTO `creature_trainer` (`CreatureID`, `TrainerID`, `MenuID`, `OptionID`)
 (11074, 62, 4170, 0);
 
 DELETE FROM `gossip_menu_option` WHERE (`OptionID`=0 AND `MenuID` IN (4356,2749,4170,7513));
-INSERT INTO `gossip_menu_option` (`MenuID`, `OptionID`, `OptionNpc`, `OptionText`, `OptionBroadcastTextId`, `OptionNpcFlag`, `Language`, `ActionMenuID`, `ActionPoiID`, `BoxCoded`, `BoxMoney`, `BoxText`, `BoxBroadcastTextID`, `VerifiedBuild`) VALUES
+INSERT INTO `gossip_menu_option` (`MenuID`, `OptionID`, `OptionIcon`, `OptionText`, `OptionBroadcastTextId`, `OptionNpcFlag`, `Language`, `ActionMenuID`, `ActionPoiID`, `BoxCoded`, `BoxMoney`, `BoxText`, `BoxBroadcastTextID`, `VerifiedBuild`) VALUES
 (4356, 0, 3, 'Train me.', 3266, 16, 0, 0, 0, 0, 0, NULL, 0, 45745),
 (2749, 0, 3, 'Train me.', 3266, 16, 0, 0, 0, 0, 0, NULL, 0, 45745),
 (4170, 0, 3, 'Train me.', 3266, 16, 0, 0, 0, 0, 0, NULL, 0, 45745),
@@ -26,7 +26,7 @@ INSERT INTO `creature_trainer` (`CreatureID`, `TrainerID`, `MenuID`, `OptionID`)
 (3290, 407, 4136, 0);
 
 DELETE FROM `gossip_menu_option` WHERE (`MenuID`=4136 AND `OptionID`=0) OR (`MenuID`=22946 AND `OptionID` IN (3,2));
-INSERT INTO `gossip_menu_option` (`MenuID`, `OptionID`, `OptionNpc`, `OptionText`, `OptionBroadcastTextId`, `OptionNpcFlag`, `Language`, `ActionMenuID`, `ActionPoiID`, `BoxCoded`, `BoxMoney`, `BoxText`, `BoxBroadcastTextID`, `VerifiedBuild`) VALUES
+INSERT INTO `gossip_menu_option` (`MenuID`, `OptionID`, `OptionIcon`, `OptionText`, `OptionBroadcastTextId`, `OptionNpcFlag`, `Language`, `ActionMenuID`, `ActionPoiID`, `BoxCoded`, `BoxMoney`, `BoxText`, `BoxBroadcastTextID`, `VerifiedBuild`) VALUES
 (4136, 0, 3, 'Train me.', 3266, 16, 0, 0, 0, 0, 0, NULL, 0, 45745),
 (22946, 3, 0, 'What happened here?', 38328, 1, 0, 0, 0, 0, 0, NULL, 0, 45745),
 (22946, 2, 0, 'Can you show me what Darkshore was like before the battle?', 169023, 1, 0, 0, 0, 0, 0, NULL, 0, 45745);

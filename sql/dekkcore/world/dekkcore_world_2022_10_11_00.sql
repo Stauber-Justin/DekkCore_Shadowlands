@@ -264,7 +264,7 @@ UPDATE `smart_scripts` SET `event_type`='0' WHERE  `entryorguid`=119077 AND `sou
 REPLACE INTO `creature_text` (`CreatureID`, `GroupID`, `ID`, `Text`, `Type`, `Language`, `Probability`, `Emote`, `Duration`, `Sound`, `SoundPlayType`, `BroadcastTextId`, `TextRange`, `comment`) VALUES (46425, 1, 0, 'Freedom at last. I thank you, stranger. Tahet no longer here. A cruel Neferset warlord called Caimas took him.', 12, 0, 100, 0, 0, 0, 0, 0, 0, '');
 REPLACE INTO `creature_text` (`CreatureID`, `GroupID`, `ID`, `Text`, `Type`, `Language`, `Probability`, `Emote`, `Duration`, `Sound`, `SoundPlayType`, `BroadcastTextId`, `TextRange`, `comment`) VALUES (46425, 0, 0, 'Wait! Here come the Neferset guards! Fight near me so I can beat their skulls in!', 12, 0, 100, 0, 0, 0, 0, 0, 0, '');
 
-UPDATE world.creature_template_movement SET Ground='0', Rooted='1' WHERE  CreatureId=32254;
+UPDATE creature_template_movement SET Ground='0', Rooted='1' WHERE  CreatureId=32254;
 REPLACE INTO areatrigger_involvedrelation (id, quest) VALUES (5881, 25621);
 
 UPDATE `creature_template` SET `unit_flags`='512', `AIName`='SmartAI' WHERE  `entry`=40942;

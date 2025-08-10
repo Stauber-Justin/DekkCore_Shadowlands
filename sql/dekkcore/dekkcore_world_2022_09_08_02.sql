@@ -172,8 +172,8 @@ INSERT INTO `creature_template_scaling` (`Entry`, `DifficultyID`, `LevelScalingD
 
 
 DELETE FROM `gossip_menu_option` WHERE (`MenuID`=28074 AND `OptionID` IN (1,0));
-INSERT INTO `gossip_menu_option` (`MenuID`, `OptionID`, `OptionIcon`, `OptionText`, `OptionBroadcastTextId`, `OptionType`, `OptionNpcFlag`, `Language`, `ActionMenuID`, `ActionPoiID`, `BoxCoded`, `BoxMoney`, `BoxText`, `BoxBroadcastTextID`, `VerifiedBuild`) VALUES
-(28074, 1, 1, 'Show me your wares.', 58437, 3, 128, 0, 0, 0, 0, 0, NULL, 0, 45114), -- OptionBroadcastTextID: 58437 - 90189 - 180077
+INSERT INTO `gossip_menu_option` (`MenuID`, `OptionID`, `OptionIcon`, `OptionText`, `OptionBroadcastTextId`, `OptionType`, `Language`, `ActionMenuID`, `ActionPoiID`, `BoxCoded`, `BoxMoney`, `BoxText`, `BoxBroadcastTextID`, `VerifiedBuild`) VALUES
+(28074, 1, 1, 'Show me your wares.', 58437, 3, 0, 0, 0, 0, 0, NULL, 0, 45114), -- OptionBroadcastTextID: 58437 - 90189 - 180077
 (28074, 0, 0, 'You seem to recognize this coin. What is it?', 0, 1, 1, 0, 28075, 0, 0, 0, NULL, 0, 45114);
 
 REPLACE INTO `smart_scripts` (`entryorguid`, `source_type`, `id`, `link`, `event_type`, `event_phase_mask`, `event_chance`, `event_flags`, `event_param1`, `event_param2`, `event_param3`, `event_param4`, `event_param5`, `event_param_string`, `action_type`, `action_param1`, `action_param2`, `action_param3`, `action_param4`, `action_param5`, `action_param6`, `target_type`, `target_param1`, `target_param2`, `target_param3`, `target_param4`, `target_x`, `target_y`, `target_z`, `target_o`, `comment`) VALUES (17326, 0, 2, 0, 8, 0, 100, 512, 0, 0, 0, 0, 0, '', 33, 17654, 0, 0, 0, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Blacksilt Scout - On Spellhit - Give Quest Credit');
@@ -239,11 +239,10 @@ UPDATE `creature_template` SET `minlevel`='10', `faction`='22', `npcflag`='0', `
 REPLACE INTO `creature_template_scaling` (`Entry`, `ContentTuningID`, `VerifiedBuild`) VALUES ('25392', '2', '40593');
 
 UPDATE `creature_template` SET `AIName`='', `ScriptName`='npc_zm_field_scout' WHERE `entry` IN (18581,18564);
-UPDATE `gossip_menu_option` SET `OptionNpcFlag`=1 WHERE `MenuID`=7724 AND `OptionID`=0;
 
 DELETE FROM `gossip_menu_option` WHERE (`MenuID`=7722 AND `OptionID`=0);
-INSERT INTO `gossip_menu_option` (`MenuID`, `OptionID`, `OptionIcon`, `OptionText`, `OptionBroadcastTextId`, `OptionType`, `OptionNpcFlag`, `Language`, `ActionMenuID`, `ActionPoiID`, `BoxCoded`, `BoxMoney`, `BoxText`, `BoxBroadcastTextID`, `VerifiedBuild`) VALUES
-(7722, 0, 0, 'Give me a battle standard. I will take control of Twin Spire Ruins.', 15537, 1, 1, 0, 0, 0, 0, 0, NULL, 0, 45114); -- OptionBroadcastTextID: 15537 - 15539
+INSERT INTO `gossip_menu_option` (`MenuID`, `OptionID`, `OptionIcon`, `OptionText`, `OptionBroadcastTextId`, `OptionType`, `Language`, `ActionMenuID`, `ActionPoiID`, `BoxCoded`, `BoxMoney`, `BoxText`, `BoxBroadcastTextID`, `VerifiedBuild`) VALUES
+(7722, 0, 0, 'Give me a battle standard. I will take control of Twin Spire Ruins.', 15537, 1, 0, 0, 0, 0, 0, NULL, 0, 45114); -- OptionBroadcastTextID: 15537 - 15539
 
 UPDATE `gossip_menu_option` SET `VerifiedBuild`=45114 WHERE (`MenuID`=7722 AND `OptionID`=1);
 
@@ -322,7 +321,7 @@ UPDATE `creature_template` SET `gossip_menu_id`='46496', `npcflag`='1' WHERE  `e
 REPLACE INTO `creature_text` (`CreatureID`, `GroupID`, `ID`, `Text`, `Type`, `Language`, `Probability`, `Emote`, `Duration`, `Sound`, `SoundPlayType`, `BroadcastTextId`, `TextRange`, `comment`) VALUES (46496, 0, 0, 'To Late He come', 12, 0, 100, 0, 0, 0, 0, 0, 0, '');
 REPLACE INTO `creature_text` (`CreatureID`, `GroupID`, `ID`, `Text`, `Type`, `Language`, `Probability`, `Emote`, `Duration`, `Sound`, `SoundPlayType`, `BroadcastTextId`, `TextRange`, `comment`) VALUES (46496, 1, 0, 'Yes please Kill Him', 12, 0, 100, 0, 0, 0, 0, 0, 0, '');
 
-REPLACE INTO `gossip_menu_option` (`MenuID`, `OptionText`, `OptionType`, `OptionNpcFlag`) VALUES ('46496', 'To Late he is come', '1', '1');
+REPLACE INTO `gossip_menu_option` (`MenuID`, `OptionText`, `OptionType`) VALUES ('46496', 'To Late he is come', '1');
 
 REPLACE INTO `smart_scripts` (`entryorguid`, `source_type`, `id`, `link`, `event_type`, `event_phase_mask`, `event_chance`, `event_flags`, `event_param1`, `event_param2`, `event_param3`, `event_param4`, `event_param5`, `event_param_string`, `action_type`, `action_param1`, `action_param2`, `action_param3`, `action_param4`, `action_param5`, `action_param6`, `target_type`, `target_param1`, `target_param2`, `target_param3`, `target_param4`, `target_x`, `target_y`, `target_z`, `target_o`, `comment`) VALUES (46496, 0, 0, 1, 62, 0, 100, 0, 46496, 0, 0, 0, 0, '', 80, 4649600, 2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'On gossip select - Run script');
 REPLACE INTO `smart_scripts` (`entryorguid`, `source_type`, `id`, `link`, `event_type`, `event_phase_mask`, `event_chance`, `event_flags`, `event_param1`, `event_param2`, `event_param3`, `event_param4`, `event_param5`, `event_param_string`, `action_type`, `action_param1`, `action_param2`, `action_param3`, `action_param4`, `action_param5`, `action_param6`, `target_type`, `target_param1`, `target_param2`, `target_param3`, `target_param4`, `target_x`, `target_y`, `target_z`, `target_o`, `comment`) VALUES (46496, 0, 1, 2, 61, 0, 100, 0, 0, 0, 0, 0, 0, '', 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Link - Say text 0');

@@ -201,7 +201,7 @@ INSERT INTO `gossip_menu` (`MenuID`, `TextID`, `VerifiedBuild`) VALUES
 (11892, 16683, 45338);
 
 DELETE FROM `gossip_menu_option` WHERE `MenuID`=11892 AND `OptionID` IN (0, 1);
-INSERT INTO `gossip_menu_option` (`MenuID`, `OptionID`, `OptionNpc`, `OptionText`, `OptionBroadcastTextID`, `OptionNpcFlag`, `Language`, `ActionMenuID`, `ActionPoiID`, `BoxCoded`, `BoxMoney`, `BoxText`, `BoxBroadcastTextID`, `VerifiedBuild`) VALUES 
+INSERT INTO `gossip_menu_option` (`MenuID`, `OptionID`, `OptionIcon`, `OptionText`, `OptionBroadcastTextID`, `OptionNpcFlag`, `Language`, `ActionMenuID`, `ActionPoiID`, `BoxCoded`, `BoxMoney`, `BoxText`, `BoxBroadcastTextID`, `VerifiedBuild`) VALUES 
 (11892, 0, 0, 'I need to take a bat to the Dawning Isles.', 44905, 0, 0, 0, 0, 0, 0, NULL, 0, 45338),
 (11892, 1, 0, 'Show me where I can fly.', 12271, 0, 0, 0, 0, 0, 0, NULL, 0, 45338);
 

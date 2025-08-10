@@ -65,7 +65,7 @@ DELETE FROM `gossip_menu_option` WHERE `MenuID`=8994 AND `OptionID`=6;
 DELETE FROM `gossip_menu_option` WHERE `MenuID` IN (8995, 8996, 8997, 9025, 9558) AND `OptionID`=5;
 DELETE FROM `gossip_menu_option` WHERE `MenuID` IN (24346, 24441);
 DELETE FROM `gossip_menu_option` WHERE `MenuID` BETWEEN 24374 AND 24381;
-INSERT INTO `gossip_menu_option` (`MenuID`, `OptionID`, `OptionNpc`, `OptionText`, `OptionBroadcastTextId`, `OptionNpcFlag`, `Language`, `ActionMenuID`, `ActionPoiID`, `BoxCoded`, `BoxMoney`, `BoxText`, `BoxBroadcastTextID`, `VerifiedBuild`) VALUES
+INSERT INTO `gossip_menu_option` (`MenuID`, `OptionID`, `OptionIcon`, `OptionText`, `OptionBroadcastTextId`, `OptionNpcFlag`, `Language`, `ActionMenuID`, `ActionPoiID`, `BoxCoded`, `BoxMoney`, `BoxText`, `BoxBroadcastTextID`, `VerifiedBuild`) VALUES
 (8994, 6, 0, 'Brewfest Chowdown', 177078, 1, 0, 24441, 6137, 0, 0, NULL, 0, 45338),
 (8995, 5, 0, 'Brewfest Chowdown', 177078, 1, 0, 24441, 0, 0, 0, NULL, 0, 45338), -- Blizzlike
 (8996, 5, 0, 'Brewfest Chowdown', 177078, 1, 0, 24441, 0, 0, 0, NULL, 0, 45338), -- Blizzlike

@@ -414,7 +414,7 @@ DELETE FROM `creature_text` WHERE `CreatureID`=42391 AND `GroupID`=0 AND `ID`=2;
 REPLACE INTO `creature_text` (`CreatureID`, `GroupID`, `ID`, `Text`, `Type`, `Language`, `Probability`, `Emote`, `Duration`, `Sound`, `SoundPlayType`, `BroadcastTextId`, `TextRange`, `comment`) VALUES (42391, 0, 2, 'HEY! HEY YOU! GET OFF MY PROPERTY!', 12, 0, 100, 1, 0, 0, 0, 42361, 0, '');
 
 DELETE FROM `gossip_menu_option` WHERE `MenuID`=11635 AND `OptionID`=1;
-REPLACE INTO `gossip_menu_option` (`MenuID`, `OptionID`, `OptionIcon`, `OptionText`, `OptionBroadcastTextID`, `OptionType`, `OptionNpcFlag`, `Language`, `ActionMenuID`, `ActionPoiID`, `BoxCoded`, `BoxMoney`, `BoxText`, `BoxBroadcastTextID`, `VerifiedBuild`) VALUES (11635, 1, 0, 'Maybe a couple copper will loosen your tongue. Now tell me, did you see who killed the Furlbrows?', 42371, 1, 1, 0, 0, 0, 0, 2, 'Are you sure you want to give this hobo money?', 0, 25881);
+REPLACE INTO `gossip_menu_option` (`MenuID`, `OptionID`, `OptionIcon`, `OptionText`, `OptionBroadcastTextID`, `OptionType`, `Language`, `ActionMenuID`, `ActionPoiID`, `BoxCoded`, `BoxMoney`, `BoxText`, `BoxBroadcastTextID`, `VerifiedBuild`) VALUES (11635, 1, 0, 'Maybe a couple copper will loosen your tongue. Now tell me, did you see who killed the Furlbrows?', 42371, 1, 0, 0, 0, 0, 2, 'Are you sure you want to give this hobo money?', 0, 25881);
 
 -- Grand Executor Mortuus
 UPDATE `creature_template` SET `ScriptName`='npc_silverpine_grand_executor_mortuus' WHERE `entry`=44615;
