@@ -85,7 +85,9 @@ variables_map GetConsoleArguments(int argc, char** argv, fs::path& configFile, s
 
 int main(int argc, char** argv)
 {
-    signal(SIGABRT, &Trinity::AbortHandler);
+    try
+    {
+        signal(SIGABRT, &Trinity::AbortHandler);
 
     auto configFile = fs::absolute(_TRINITY_BNET_CONFIG);
     std::string configService;
@@ -249,9 +251,20 @@ int main(int argc, char** argv)
 
     TC_LOG_INFO("server.bnetserver", "Halting process...");
 
-    signals.cancel();
+        signals.cancel();
 
-    return 0;
+        return 0;
+    }
+    catch (std::exception const& e)
+    {
+        std::cerr << "bnetserver terminated due to unhandled exception: " << e.what() << std::endl;
+    }
+    catch (...)
+    {
+        std::cerr << "bnetserver terminated due to unknown unhandled exception" << std::endl;
+    }
+
+    return 1;
 }
 
 /// Initialize connection to the database
