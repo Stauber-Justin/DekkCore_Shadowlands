@@ -124,7 +124,9 @@ variables_map GetConsoleArguments(int argc, char** argv, fs::path& configFile, s
 /// Launch the Trinity server
 extern int main(int argc, char** argv)
 {
-    signal(SIGABRT, &Trinity::AbortHandler);
+    try
+    {
+        signal(SIGABRT, &Trinity::AbortHandler);
 
     auto configFile = fs::absolute(_TRINITY_CORE_CONFIG);
     std::string configService;
@@ -415,11 +417,22 @@ extern int main(int argc, char** argv)
 
     TC_LOG_INFO("server.worldserver", "Halting process...");
 
-    // 0 - normal shutdown
-    // 1 - shutdown at error
-    // 2 - restart command used, this code can be used by restarter for restart Trinityd
+        // 0 - normal shutdown
+        // 1 - shutdown at error
+        // 2 - restart command used, this code can be used by restarter for restart Trinityd
 
-    return World::GetExitCode();
+        return World::GetExitCode();
+    }
+    catch (std::exception const& e)
+    {
+        std::cerr << "worldserver terminated due to unhandled exception: " << e.what() << std::endl;
+    }
+    catch (...)
+    {
+        std::cerr << "worldserver terminated due to unknown unhandled exception" << std::endl;
+    }
+
+    return 1;
 }
 
 void ShutdownCLIThread(std::thread* cliThread)
