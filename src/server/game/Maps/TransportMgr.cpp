@@ -223,6 +223,13 @@ void TransportMgr::LoadTransportTemplates()
         if (!goInfo->moTransport.taxiPathID)
             continue;
 
+        TaxiPathNodeList const& path = sTaxiPathNodesByPath[goInfo->moTransport.taxiPathID];
+        if (path.empty())
+        {
+            TC_LOG_ERROR("sql.sql", "Transport %u (name: %s) has empty path data in `taxipathnode`, skipped.", entry, goInfo->name.c_str());
+            continue;
+        }
+
         // paths are generated per template, saves us from generating it again in case of instanced transports
         TransportTemplate& transport = _transportTemplates[entry];
 
